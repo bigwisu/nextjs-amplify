@@ -11,7 +11,8 @@ import Head from 'next/head';
 import Page from '../../layouts/auth';
 import useForm from '../../lib/useForm';
 
-import Amplify, { Auth } from 'aws-amplify';
+import Amplify from '@aws-amplify/core';
+import Auth from '@aws-amplify/auth';
 import CognitoConfig from '../../configs/cognito';
 
 
