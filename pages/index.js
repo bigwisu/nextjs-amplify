@@ -1,15 +1,9 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import MuiLink from '@material-ui/core/Link';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
 import Header from '../Components/Header';
 import HomeActivityCard from '../Components/HomeActivityCard';
 import { makeStyles } from '@material-ui/core/styles';
-
 
 const useStyles = makeStyles(theme => ({
   root: {

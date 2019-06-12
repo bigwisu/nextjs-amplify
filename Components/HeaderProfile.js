@@ -5,7 +5,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
-import { deepOrange } from '@material-ui/core/colors';
+import deepOrange from '@material-ui/core/colors/deepOrange';
 
 import Amplify, { Auth } from 'aws-amplify';
 import CognitoConfig from '../configs/cognito';
