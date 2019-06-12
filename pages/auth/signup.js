@@ -15,7 +15,6 @@ import Amplify from '@aws-amplify/core';
 import Auth from '@aws-amplify/auth';
 import CognitoConfig from '../../configs/cognito';
 
-
 Amplify.configure(CognitoConfig);
 
 const useStyles = makeStyles(theme => ({
