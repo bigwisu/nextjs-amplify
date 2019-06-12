@@ -7,10 +7,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import deepOrange from '@material-ui/core/colors/deepOrange';
 
-import Amplify from '@aws-amplify/core';
 import Auth from '@aws-amplify/auth';
 import CognitoConfig from '../configs/cognito';
-Amplify.configure(CognitoConfig);
+Auth.configure(CognitoConfig);
 
 const StyledAvatar = withStyles({
   root: {

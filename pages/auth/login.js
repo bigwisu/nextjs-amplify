@@ -10,11 +10,9 @@ import Router from 'next/router';
 import Page from '../../layouts/auth';
 import useForm from '../../lib/useForm';
 
-import Amplify from '@aws-amplify/core';
 import Auth from '@aws-amplify/auth';
 import CognitoConfig from '../../configs/cognito';
-
-Amplify.configure(CognitoConfig);
+Auth.configure(CognitoConfig);
 
 const useStyles = makeStyles(theme => ({
   form: {
