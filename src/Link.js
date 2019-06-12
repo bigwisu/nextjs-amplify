@@ -11,7 +11,7 @@ function NextComposed(props) {
 
   return (
     <NextLink href={href} prefetch={prefetch} as={as}>
-      <a {...other} />
+      <a {...other} style={{ textDecoration:"none" }}/>
     </NextLink>
   );
 }
@@ -52,7 +52,7 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-  activeClassName: 'active',
+  activeClassName: 'active'
 };
 
 export default withRouter(Link);
