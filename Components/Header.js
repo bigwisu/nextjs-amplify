@@ -4,13 +4,15 @@ import Toolbar from '@material-ui/core/Toolbar'
 import TypoGraphy from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
-import { teal } from '@material-ui/core/colors';
+import teal from '@material-ui/core/colors/teal';
 import HeaderLogin from './HeaderLogin';
 import HeaderProfile from './HeaderProfile';
+import Hidden from '@material-ui/core/Hidden';
+import BottomBar from './BottomBar';
 
 import Auth from '@aws-amplify/auth';
-import CognitoConfig from '../configs/cognito';
-Auth.configure(CognitoConfig);
+import AwsConfig from '../configs/aws';
+Auth.configure(AwsConfig);
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -51,6 +53,7 @@ export default function Header() {
   }, []);
 
   return (
+    <React.Fragment>
       <AppBar className={classes.appBar} color="inherit" position="static">
         <Container fixed>
           <Toolbar>
@@ -63,5 +66,9 @@ export default function Header() {
           </Toolbar>
         </Container>
       </AppBar>
+      <Hidden smUp>
+        <BottomBar/>
+      </Hidden>
+    </React.Fragment>
   );
 }

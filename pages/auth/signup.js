@@ -12,8 +12,8 @@ import Page from '../../layouts/auth';
 import useForm from '../../lib/useForm';
 
 import Auth from '@aws-amplify/auth';
-import CognitoConfig from '../../configs/cognito';
-Auth.configure(CognitoConfig);
+import AwsConfig from '../../configs/aws';
+Auth.configure(AwsConfig);
 
 const useStyles = makeStyles(theme => ({
   form: {

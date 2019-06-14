@@ -1,4 +1,4 @@
-const CognitoConfig = {
+const AwsConfig = {
   Auth: {
     identityPoolId: process.env.COGNITO_IDENTITY_POOL_ID,
     region: process.env.COGNITO_REGION,
@@ -7,4 +7,4 @@ const CognitoConfig = {
   }
 };
 
-export default CognitoConfig;
+export default AwsConfig;

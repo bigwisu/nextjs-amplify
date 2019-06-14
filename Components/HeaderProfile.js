@@ -8,8 +8,8 @@ import Avatar from '@material-ui/core/Avatar';
 import deepOrange from '@material-ui/core/colors/deepOrange';
 
 import Auth from '@aws-amplify/auth';
-import CognitoConfig from '../configs/cognito';
-Auth.configure(CognitoConfig);
+import AwsConfig from '../configs/aws';
+Auth.configure(AwsConfig);
 
 const StyledAvatar = withStyles({
   root: {

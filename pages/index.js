@@ -1,9 +1,8 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Header from '../Components/Header';
 import HomeActivityCard from '../Components/HomeActivityCard';
 import { makeStyles } from '@material-ui/core/styles';
+import Page from '../layouts/main';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,39 +17,36 @@ export default function Index() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <Header></Header>
-      <Container className={classes.container} maxWidth="lg">
-        <Grid container spacing={2}>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
-          <Grid item sm={4}>
-            <HomeActivityCard />
-          </Grid>
+    <Page>
+      <Grid container spacing={2}>
+        <Grid item sm={4}>
+          <HomeActivityCard />
         </Grid>
-      </Container>
-    </React.Fragment>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+        <Grid item sm={4}>
+          <HomeActivityCard />
+        </Grid>
+      </Grid>
+    </Page>
   );
 }

@@ -8,6 +8,7 @@
 
 # production
 /build
+/bundles
 
 # misc
 .DS_Store
