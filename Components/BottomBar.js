@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import teal from '@material-ui/core/colors/teal';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -12,7 +13,9 @@ const useStyles = makeStyles({
     width: '100%',
     position: 'fixed',
     bottom: 0,
-    zIndex: 100
+    zIndex: 100,
+    borderTopStyle: 'solid', 
+    borderTopColor: teal[500]
   },
 });
 
